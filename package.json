@@ -1,0 +1,16 @@
+{
+  "name": "h3downpatch",
+  "version": "1.0.0",
+  "description": "Hitman 3 downpatch",
+  "scripts": {
+    "start": "http-server -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --write ."
+  },
+  "author": "Solderq35",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "prettier": "2.6.2"
+  }
+}
