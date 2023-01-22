@@ -1,5 +1,19 @@
 # Hitman 3 Downpatching
 
+- [Purpose and Disclaimer](#purpose-and-disclaimer)
+- [Video Walkthrough (Epic Only)](#video-walkthrough--epic-only-)
+- [General Command Line Stuff / Prereqs](#general-command-line-stuff---prereqs)
+- [OS](#os)
+- [Install Instructions](#install-instructions)
+  - [Epic (Legendary)](#epic--legendary-)
+  - [Steam](#steam)
+- [Game Ownership / DLC's](#game-ownership---dlc-s)
+- [Miscellaneous Useful Info](#miscellaneous-useful-info)
+- [General Patch Notes Info](#general-patch-notes-info)
+- [Markdown Table Editing Instructions](#markdown-table-editing-instructions)
+- [Manifest Download Table / Specific Patch Findings](#manifest-download-table---specific-patch-findings)
+- [Acknowledgements](#acknowledgements)
+
 ## Purpose and Disclaimer
 
 - The purpose of this is to explain how to downpatch Hitman 3 on Steam / Epic
@@ -129,6 +143,7 @@ https://hitruns-wiki.vercel.app/docs/h3_patch_notes#list-of-patches
   - Make edits to the `h3downpatch.xlsx` file in Excel / LibreOffice
   - Copy contents of `h3downpatch.xlsx` into https://tabletomarkdown.com/convert-spreadsheet-to-markdown/ to convert to Markdown Table.
   - Keep in mind that some links in the table cells may break after you do this.
+- Markdown Table of Contents Generator: https://ecotrust-canada.github.io/markdown-toc/
 
 ## Manifest Download Table / Specific Patch Findings
 
@@ -160,3 +175,4 @@ https://hitruns-wiki.vercel.app/docs/h3_patch_notes#list-of-patches
 
 - Thank you [Notex](https://github.com/notexe) for sharing the Legendary manifest files (Legendary manifests are only generated if you played the game on that patch, so you would have to have played the game on every patch on Legendary since launch to have them all otherwise), and also giving valuable advice on this topic
 - Thanks you [Tinosaurus](https://github.com/Tinosaurus) for troubleshooting this process with me as well, and creating a video tutorial for Epic / Legendary downpatching
+- Thank you [Legendary](https://github.com/derrod/legendary) and [Steam Depot Downloader](https://github.com/SteamRE/DepotDownloader) once again for making this possible
