@@ -3,7 +3,7 @@
 ## Purpose and Disclaimer
 
 - The purpose of this is to explain how to downpatch Hitman 3 on Steam / Epic
-- Downpatching can allow you to experience unique patched game mechanics otherwise no longer available, as detailed in the [table below]()
+- Downpatching can allow you to experience unique patched game mechanics otherwise no longer available, as detailed in the [table below](#manifest-download-table--specific-patch-findings)
 - The manifest files listed below will require you to legally own the game in some capacity (more on this later). Piracy is not condoned
 - There's no way IOI can ban you for downpatching, considering they don't ban actual cheaters on the in-game leaderboards
 - There does not seem to be any long-term consequence of downpatching, but there's a lot about this topic not yet understood; proceed at your own risk and consider backing up important game files or mods (mods in your install folder may be wiped after a downpatch)
