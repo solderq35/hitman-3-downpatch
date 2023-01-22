@@ -1,4 +1,5 @@
 # Hitman 3 Downpatching
+
 This guide is now hosted with argubaly better formatting here: https://hitruns-wiki.vercel.app/docs/downpatching (Source code for website version [here](https://github.com/solderq35/hitruns-wiki/blob/master/website/versioned_docs/version-1.0.0/downpatching.md))
 
 - [Purpose and Disclaimer](#purpose-and-disclaimer)
@@ -19,7 +20,7 @@ This guide is now hosted with argubaly better formatting here: https://hitruns-w
 
 - The purpose of this is to explain how to downpatch Hitman 3 on Steam / Epic.
 - **This downpatching guide is not an endorsement of a downpatched category on speedrun.com for Hitman 3**
-  - Whether downpatching *should* be used for Hitman 3 speedruns is a complex topic, and we will avoid making any hasty decisions here. 
+  - Whether downpatching _should_ be used for Hitman 3 speedruns is a complex topic, and we will avoid making any hasty decisions here.
     - For instance, downpatching could split the Hitman 3 speedrun playerbase even further (we arguably already have too many categories), it will lock out console players, etc.
   - For the time being, this document exists purely for spreading awareness on how to downpatch, and to promote preservation of older game versions.
 - Downpatching can allow you to experience unique patched game mechanics otherwise no longer available, as detailed in the [table below](#manifest-download-table--specific-patch-findings)
