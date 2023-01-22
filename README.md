@@ -1,4 +1,5 @@
 # Hitman 3 Downpatching
+This guide is now hosted with argubaly better formatting here: https://hitruns-wiki.vercel.app/docs/downpatching (Source code for website version [here](https://github.com/solderq35/hitruns-wiki/blob/master/website/versioned_docs/version-1.0.0/downpatching.md))
 
 - [Purpose and Disclaimer](#purpose-and-disclaimer)
 - [Video Walkthrough (Epic)](#video-walkthrough-epic)
