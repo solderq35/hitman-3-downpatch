@@ -1,17 +1,17 @@
 # Hitman 3 Downpatching
 
 - [Purpose and Disclaimer](#purpose-and-disclaimer)
-- [Video Walkthrough (Epic Only)](#video-walkthrough--epic-only-)
-- [General Command Line Stuff / Prereqs](#general-command-line-stuff---prereqs)
+- [Video Walkthrough (Epic Only)](#video-walkthrough-epic-only)
+- [General Command Line Stuff / Prereqs](#general-command-line-stuff--prereqs)
 - [OS](#os)
 - [Install Instructions](#install-instructions)
-  - [Epic (Legendary)](#epic--legendary-)
+  - [Epic (Legendary)](#epic-legendary)
   - [Steam](#steam)
-- [Game Ownership / DLC's](#game-ownership---dlc-s)
+- [Game Ownership / DLC's](#game-ownership--dlcs)
 - [Miscellaneous Useful Info](#miscellaneous-useful-info)
 - [General Patch Notes Info](#general-patch-notes-info)
-- [Manifest Download Table / Specific Patch Findings](#manifest-download-table---specific-patch-findings)
-- [Actual README (aka how to edit this doc)](#actual-readme--aka-how-to-edit-this-doc-)
+- [Manifest Download Table / Specific Patch Findings](#manifest-download-table--specific-patch-findings)
+- [Actual README (aka how to edit this doc)](#actual-readme-aka-how-to-edit-this-doc)
 - [Acknowledgements](#acknowledgements)
 
 ## Purpose and Disclaimer
@@ -170,7 +170,8 @@ https://hitruns-wiki.vercel.app/docs/h3_patch_notes#list-of-patches
   - Make edits to the `h3downpatch.xlsx` file in Excel / LibreOffice
   - Copy contents of `h3downpatch.xlsx` into https://tabletomarkdown.com/convert-spreadsheet-to-markdown/ to convert to Markdown Table.
   - Keep in mind that some links in the table cells may break after you do this.
-- Markdown Table of Contents Generator: https://ecotrust-canada.github.io/markdown-toc/
+- Markdown Table of Contents Generator: https://jsfiddle.net/remarkablemark/o0mja3hf/
+  - Paste everything below line 1 (`# HitRuns Wiki`) into the jsfiddle and it'll spit out a table of contents
 
 ## Acknowledgements
 
