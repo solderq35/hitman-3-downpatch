@@ -1,7 +1,7 @@
 # Hitman 3 Downpatching
 
 - [Purpose and Disclaimer](#purpose-and-disclaimer)
-- [Video Walkthrough (Epic Only)](#video-walkthrough-epic-only)
+- [Video Walkthrough (Epic)](#video-walkthrough-epic)
 - [General Command Line Stuff / Prereqs](#general-command-line-stuff--prereqs)
 - [OS](#os)
 - [Install Instructions](#install-instructions)
@@ -22,10 +22,11 @@
 - There's no way IOI can ban you for downpatching, considering they don't ban actual cheaters on the in-game leaderboards
 - There does not seem to be any long-term consequence of downpatching, but there's a lot about this topic not yet understood; proceed at your own risk and consider backing up important game files or mods (mods in your install folder may be wiped after a downpatch)
 
-## Video Walkthrough (Epic Only)
+## Video Walkthrough (Epic)
 
 - https://www.youtube.com/watch?v=4Uzx9CJf-uk
   - Credits: [Tinosaurus](https://github.com/Tinosaurus)
+- Currently we only have a video walkthrough for Epic, as the process is a lot more complicated for Epic. We may make a Steam video tutorial sometime in the future.
 
 ## General Command Line Stuff / Prereqs
 
@@ -171,7 +172,8 @@ https://hitruns-wiki.vercel.app/docs/h3_patch_notes#list-of-patches
   - Copy contents of `h3downpatch.xlsx` into https://tabletomarkdown.com/convert-spreadsheet-to-markdown/ to convert to Markdown Table.
   - Keep in mind that some links in the table cells may break after you do this.
 - Markdown Table of Contents Generator: https://jsfiddle.net/remarkablemark/o0mja3hf/
-  - Paste everything below line 1 (`# HitRuns Wiki`) into the jsfiddle and it'll spit out a table of contents
+  - Paste everything from [Video Walkthrough Header 2](#video-walkthrough-epic-only) and below into the jsfiddle and it'll spit out a table of contents
+  - Including the first header `#Hitman 3 Downpatching` will make the table of contents unnecessarily nested
 
 ## Acknowledgements
 
