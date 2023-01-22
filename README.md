@@ -172,8 +172,9 @@ https://hitruns-wiki.vercel.app/docs/h3_patch_notes#list-of-patches
   - Copy contents of `h3downpatch.xlsx` into https://tabletomarkdown.com/convert-spreadsheet-to-markdown/ to convert to Markdown Table.
   - Keep in mind that some links in the table cells may break after you do this.
 - Markdown Table of Contents Generator: https://jsfiddle.net/remarkablemark/o0mja3hf/
-  - Paste everything from [Video Walkthrough Header 2](#video-walkthrough-epic-only) and below into the jsfiddle and it'll spit out a table of contents
+  - Paste everything from [Video Walkthrough Header 2](#video-walkthrough-epic) and below into the jsfiddle and it'll spit out a table of contents
   - Including the first header `#Hitman 3 Downpatching` will make the table of contents unnecessarily nested
+- Actually it's a good idea to run `yarn prettier` before you make a commit in general, it can fix a lot of Markdown formatting issues
 
 ## Acknowledgements
 
