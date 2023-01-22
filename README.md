@@ -16,11 +16,15 @@
 
 ## Purpose and Disclaimer
 
-- The purpose of this is to explain how to downpatch Hitman 3 on Steam / Epic
+- The purpose of this is to explain how to downpatch Hitman 3 on Steam / Epic.
+- **This downpatching guide is not an endorsement of a downpatched category on speedrun.com for Hitman 3**
+  - Whether downpatching *should* be used for Hitman 3 speedruns is a complex topic, and we will avoid making any hasty decisions here. 
+    - For instance, downpatching could split the Hitman 3 speedrun playerbase even further (we arguably already have too many categories),it will lock out console players, etc.
+  - For the time being, this document exists purely for spreading awareness on how to downpatch, and to promote preservation of older game versions.
 - Downpatching can allow you to experience unique patched game mechanics otherwise no longer available, as detailed in the [table below](#manifest-download-table--specific-patch-findings)
-- The manifest files listed below will require you to legally own the game in some capacity (more on this later). Piracy is not condoned
-- There's no way IOI can ban you for downpatching, considering they don't ban actual cheaters on the in-game leaderboards
-- There does not seem to be any long-term consequence of downpatching, but there's a lot about this topic not yet understood; proceed at your own risk and consider backing up important game files or mods (mods in your install folder may be wiped after a downpatch)
+- The manifest files listed below will require you to legally own the game in some capacity (more on this [here](#game-ownership--dlcs). Piracy is not condoned
+- There's no way IOI can ban you for downpatching, considering they don't ban actual cheaters on the in-game leaderboards.
+- There does not seem to be any long-term consequence of downpatching, but there's a lot about this topic not yet understood; proceed at your own risk and consider backing up important game files or mods (mods in your install folder may be wiped after a downpatch).
 
 ## Video Walkthrough (Epic)
 
@@ -33,7 +37,7 @@
 - Just know the very basics
 - Right click folder in Windows Explorer > Copy address as text
   - [Screenshot for Reference](https://media.discordapp.net/attachments/1018323831468851202/1066671125892976690/image.png?width=901&height=670)
-- Type `cd <DIRECTORY_ADDRESS>` into your command line / terminal to navigate to that directory in the command line
+- Type `cd <DIRECTORY_ADDRESS>` into your command line / terminal to navigate to that directory in the command line.
   - `<ALLCAPS>` in the below documentation should be understood as a stand-in value for your actual credentials / files, please substitute with the correct capitalization, and without angled brackets unless otherwise indicated.
 - Right click to paste into terminal / command line
 - If for some reason a directory has a space in it (e.g. `C:\Program Files...`), then please surround it with single quotes for any command line arugments, e.g. `cd 'C:\Program Files...'`, or it won't work
