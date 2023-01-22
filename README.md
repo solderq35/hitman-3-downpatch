@@ -10,8 +10,8 @@
 - [Game Ownership / DLC's](#game-ownership---dlc-s)
 - [Miscellaneous Useful Info](#miscellaneous-useful-info)
 - [General Patch Notes Info](#general-patch-notes-info)
-- [Markdown Table Editing Instructions](#markdown-table-editing-instructions)
 - [Manifest Download Table / Specific Patch Findings](#manifest-download-table---specific-patch-findings)
+- [Actual README (aka how to edit this doc)](#actual-readme--aka-how-to-edit-this-doc-)
 - [Acknowledgements](#acknowledgements)
 
 ## Purpose and Disclaimer
@@ -131,20 +131,6 @@
 
 https://hitruns-wiki.vercel.app/docs/h3_patch_notes#list-of-patches
 
-## Markdown Table Editing Instructions
-
-- Editing the table directly in Markdown is recommended (Excel does not seem to allow multiple hyperlinks in a table cell, among other UI flaws).
-  - I'm using VSCode for editing the Markdown, with [this Markdown extension](https://marketplace.visualstudio.com/items?itemName=starkwang.markdown) for general syntax help, and [this Markdown Preview Extension](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced) to see how my documents will look while still in development.
-  - It's recommended to not use word wrapping in your IDE of choice, the Markdown table won't look right if you use wrap.
-  - Using [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable), run `yarn install` to install dependencies from `package.json`
-  - Then run `yarn prettier` to reformat the data table after editing it (for ease of editing to make columns line up, this doesn't affect how the table looks when compiled)
-  - Alternatively, use the Markdown viewer / editor of your choice; https://stackedit.io/ is a solid choice
-- If you need to make any major adjustments to the table such as adding a whole column, you can convert Excel to Markdown with following workflow:
-  - Make edits to the `h3downpatch.xlsx` file in Excel / LibreOffice
-  - Copy contents of `h3downpatch.xlsx` into https://tabletomarkdown.com/convert-spreadsheet-to-markdown/ to convert to Markdown Table.
-  - Keep in mind that some links in the table cells may break after you do this.
-- Markdown Table of Contents Generator: https://ecotrust-canada.github.io/markdown-toc/
-
 ## Manifest Download Table / Specific Patch Findings
 
 | Manifest Name / Download                                                                                                                                 | Release Date         | Game Version                                 | Official Patch Notes                                                                                     | Patch Note Commentary                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -170,6 +156,21 @@ https://hitruns-wiki.vercel.app/docs/h3_patch_notes#list-of-patches
 | [Eider 5915918](https://github.com/solderq35/hitman-3-downpatch/blob/main/src/Eider_Windows_5898594.manifest) (Epic)                                     | 24-May-2022 or later | 3.110                                        | [https://www.ioi.dk/hitman-3-year-2-may-patch-notes](https://www.ioi.dk/hitman-3-year-2-may-patch-notes) | • [S3 Master Cameras Patch](https://www.youtube.com/watch?v=GJcN8RMhOxo&t=24s)<br>• [Added invisible floor to Mendoza sliding roof](https://youtu.be/v2LsiANC3NY)<br>• Most recent ET Arcade dates to 2022-Jul-14                                                                                                                                                                                                                |
 | [Eider 6041891](https://github.com/solderq35/hitman-3-downpatch/blob/main/src/Eider_Windows_6041891.manifest) (Epic) <br><br>1587269672222714171 (Steam) | 26-Jul-2022          | 3.120                                        | [https://www.ioi.dk/hitman-3-july-patch-notes/](https://www.ioi.dk/hitman-3-july-patch-notes/)           | • Added Molotov.<br>• Technically not the only patch with Molly playable<br>• Fixed (some) Haven viewcone wallhacks                                                                                                                                                                                                                                                                                                              |
 | [Eider 6239328](https://github.com/solderq35/hitman-3-downpatch/blob/main/src/Eider_Windows_6239328.manifest) (Epic) <br><br>182129136748469362 (Steam)  | 6-Oct-2022           | 3.130                                        | [https://www.ioi.dk/hitman-3-october-patch-notes/](https://www.ioi.dk/hitman-3-october-patch-notes/)     | • [Removed molly accident / wallbang](https://youtu.be/eXTd8ZC3ftA)<br>• [Changed NY frisk](https://youtu.be/y2GuYwNMy5k?t=18)<br>  • Check the [new Frisk skip](https://hitruns-wiki.vercel.app/docs/fullgame_tutorials#meta-strategies-overview)<br>• Changed Dartmoor ledge drop<br>  • Check the [new Dartmoor Ledge Drop](https://youtu.be/RIlDbIci-bs?t=46)<br>• Removed [RFID exploit](https://youtu.be/fyPVfSPQSb4?t=96) |
+
+## Actual README (aka how to edit this doc)
+
+- [Github Markdown Documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+- Editing the table directly in Markdown is recommended (Excel does not seem to allow multiple hyperlinks in a table cell, among other UI flaws).
+  - I'm using VSCode for editing the Markdown, with [this Markdown extension](https://marketplace.visualstudio.com/items?itemName=starkwang.markdown) for general syntax help, and [this Markdown Preview Extension](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced) to see how my documents will look while still in development.
+  - It's recommended to not use word wrapping in your IDE of choice, the Markdown table won't look right if you use wrap.
+  - Using [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable), run `yarn install` to install dependencies from `package.json`
+  - Then run `yarn prettier` to reformat the data table after editing it (for ease of editing to make columns line up, this doesn't affect how the table looks when compiled)
+  - Alternatively, use the Markdown viewer / editor of your choice; https://stackedit.io/ is a solid choice
+- If you need to make any major adjustments to the table such as adding a whole column, you can convert Excel to Markdown with following workflow:
+  - Make edits to the `h3downpatch.xlsx` file in Excel / LibreOffice
+  - Copy contents of `h3downpatch.xlsx` into https://tabletomarkdown.com/convert-spreadsheet-to-markdown/ to convert to Markdown Table.
+  - Keep in mind that some links in the table cells may break after you do this.
+- Markdown Table of Contents Generator: https://ecotrust-canada.github.io/markdown-toc/
 
 ## Acknowledgements
 
