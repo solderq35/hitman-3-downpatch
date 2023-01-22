@@ -1,46 +1,69 @@
 # Hitman 3 Downpatching
 
-## Instructions to Downpatch:
+## Purpose and Disclaimer
+- The purpose of this is to explain how to downpatch Hitman 3 on Steam / Epic
+- Downpatching can allow you to experience unique patched game mechanics otherwise no longer available, as detailed in the table below
+- The manifest files listed below will require you to legally own the game in some capacity (more on this later). Piracy is not condoned
+- There's no way IOI can ban you for downpatching, considering they don't ban actual cheaters on the in-game leaderboards
+- There does not seem to be any long-term consequence of downpatching, but there's a lot about this topic not yet understood; proceed at your own risk and consider backing up important game files or mods (mods in your install folder may be wiped after a downpatch)
+
+## Video Walkthrough (Epic Only)
 
 https://www.youtube.com/watch?v=4Uzx9CJf-uk
 
-## General Patch Notes Info
 
-https://hitruns-wiki.vercel.app/docs/h3_patch_notes#list-of-patches
+## General Command Line Stuff / Prereqs
+
+- Just know the very basics
+- Right click folder in Windows Explorer > Copy address as text
+- cd `<ADDRESS>`
+  - `<ALLCAPS>` in the below documentation should be understood as a stand-in value for your actual credentials / files, please substitute with the correct capitalization, and without angled brackets unless otherwise indicated.
+- Right click to paste into terminal / command line
 
 ## OS
 
 - This should work on Windows as well as Linux using Wine / Steam Proton (there is no native Linux version for Hitman 3)
 - As a bit of trivia, most Legendary users are on Linux, presumably with Wine for Epic
 
-## General Command Line Stuff
-
-- Just know the very basics
-- Right click folder in Windows Explorer > Copy address as text
-- cd `<ADDRESS>`
-- Right click to paste into terminal
-
 ## Install Instructions
 
-### Epic
+### Epic (Legendary)
+**Setup**
+- Legendary is essentially a modded game launcher for Epic that will allow you to downpatch
+- Install Legendary from here: https://github.com/derrod/legendary/releases/latest (just download `legendary.exe` if on Windows)
+- See this document on more information on how to install Hitman 3 with Legendary specifically: https://rentry.org/H3Legendary
+- General Legendary documentation: https://github.com/derrod/legendary/blob/master/README.md
+- Before proceeding further, open the official Epic Games Launcher, click profile picture in upper right, then go to Settings > Manage Games > Uncheck "Allow Auto Updates". Otherwise, the game will update itself to the latest version automatically again if you ever open the Epic Games launcher later for any reason.
+  - [Screenshot for Reference](https://media.discordapp.net/attachments/1018323831468851202/1066669559291052112/image.png?width=1255&height=670)
 
-- Open the official Epic Games Launcher, click profile picture in upper right, then go to Settings > Manage Games > Uncheck "Allow Auto Updates". Otherwise, the game will update itself to the latest version automatically again if you ever open the Epic Games launcher later for any reason.
-- `legendary auth`
-- `legendary install Eider --manifest <MANIFEST_FILE_PATH>`
-  - If you get asked if you want to install offline or if you want to install DLC's, say yes.
-  - You might get 403 errors on the download; the Epic / Legendary servers aren't very stable for downloading. Either wait it out,
+**Downpatch Instructions**
+- In Terminal / Command Line, navigate to the directory from where you installed `legendary.exe` with `cd <INSTALL_LOCATION>`
+- Run the following commands. All of the following except `legendary launch` should only have to be completed once per downpatch: 
+  - `legendary auth`
+  - `legendary install Eider --manifest <MANIFEST_FILE_PATH>`
+    - `Eider` is a "code name" so to speak for Hitman 3 in Epic / Legendary
+    - If you get asked if you want to install offline or if you want to install DLC's, say yes.
+    - You might get 403 errors on the download; the Epic / Legendary servers aren't very stable for downloading. Either wait it out,
     or hit `Ctrl C` to cancel the download and try again.
-- `legendary verify Eider`
-- `legendary repair Eider`
-  - The two commands above of verify and repair are needed because often times, at least a few downloaded files will be corrupted. Your game will not launch if files are corrupted, so you should verify and repair always after installing the downpatch files.
-- `legendary launch Eider --skip-version-check`
-  - The `--skip-version-check` argument is needed on a downpatched game, or it won't launch.
+  - `legendary verify Eider`
+  - `legendary repair Eider`
+    - The two commands above of `verify` and `repair` are needed because often times, at least a few downloaded files will be corrupted. Your game will not launch if files are corrupted, so you should verify and repair always after installing the downpatch files.
+  - `legendary launch Eider --skip-version-check`
+    - The `--skip-version-check` argument is needed on a downpatched game, or it won't launch.
+    - NOTE: You can ONLY use legendary to launch the downpatched version on Epic. The official Epic Games Launcher won't let you launch the game when downpatched!
 
 ### Steam
-
-- Right click Hitman 3 in your Steam Library > Properties > Updates > Only update this game when I launch it
+**Setup**
+- Install Steam DepotDownloader from here: https://github.com/SteamRE/DepotDownloader/releases/latest (just download the zip and unzip it)
 - You may need the latest version of dotnet, especially if you use an older version of Visual Studio for programming.
   - Install here: https://dotnet.microsoft.com/en-us/download
+- Before proceeding further, right click Hitman 3 in your Steam Library > Properties > Updates > Only update this game when I launch it
+  - This will prevent Steam from trying to auto-update the game (in theory)
+  - [Screenshot for Reference](https://media.discordapp.net/attachments/1018323831468851202/1066670572257415199/image.png?width=968&height=670)
+
+**Downpatch Instructions**
+- In Terminal / Command Line, navigate to the directory from where you installed Steam DepotDownloader with `cd <INSTALL_LOCATION>`
+- For the next steps, head to [SteamDB](https://steamdb.info/depot/1659041/manifests/) to check the manifest ID's.
 - `ddotnet DepotDownloader.dll -app 1847520 -depot 1659041 -manifest <MANIFEST_ID> -user <STEAM_USER_ID> -pass <STEAM_PASSWORD> -dir <INSTALLDIR>`
 - `dotnet DepotDownloader.dll -app 1847520 -depot 1659041 -manifest <MANIFEST_ID> -user <STEAM_USER_ID> -pass <STEAM_PASSWORD> -dir <INSTALLDIR> -validate`
 - Alternatively, if you want to keep your downpatch files separate / maintain a backup, you can leave out the `dir <INSTALLDIR` argument and copy over the files manually.
@@ -71,10 +94,10 @@ https://hitruns-wiki.vercel.app/docs/h3_patch_notes#list-of-patches
 - The downpatched files from Steam and Epic are mostly but not completely compatible with each other. Any files ending with `.exe` are cross-platform. However, the `Launcher.exe` and `Hitman3.exe` will only work on the platform they are designed for.
   - Due to an inability to get earlier versions of the `.exe` files from Steam Depot Downloader, Steam Hitman 3 is probably locked onto versions of January 2022 or later.
 
-## Specific Patch Findings
+## General Patch Notes Info
+https://hitruns-wiki.vercel.app/docs/h3_patch_notes#list-of-patches
 
-**Data Table Editing Instructions**:
-
+## Markdown Table Editing Instructions
 - Editing the table directly in Markdown is recommended (Excel does not seem to allow multiple hyperlinks in a table cell, among other UI flaws).
   - I'm using VSCode for editing the Markdown, with [this Markdown extension](https://marketplace.visualstudio.com/items?itemName=starkwang.markdown) for general syntax help, and [this Markdown Preview Extension](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced) to see how my documents will look while still in development.
   - It's recommended to not use word wrapping in your IDE of choice, the Markdown table won't look right if you use wrap.
@@ -85,6 +108,8 @@ https://hitruns-wiki.vercel.app/docs/h3_patch_notes#list-of-patches
   - Make edits to the `h3downpatch.xlsx` file in Excel / LibreOffice
   - Copy contents of `h3downpatch.xlsx` into https://tabletomarkdown.com/convert-spreadsheet-to-markdown/ to convert to Markdown Table.
   - Keep in mind that some links in the table cells may break after you do this.
+
+## Manifest Download Table / Specific Patch Findings
 
 | Patch Name / Download                                                                                         | Release Date                                  | Game Version                                 | Official Patch Notes                                                                                     | Patch Note Commentary                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | -------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
