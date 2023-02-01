@@ -11,7 +11,6 @@ This guide is now hosted with argubaly better formatting here: https://hitruns-w
   - [Steam](#steam)
 - [Game Ownership / DLC's](#game-ownership--dlcs)
 - [Miscellaneous Useful Info](#miscellaneous-useful-info)
-- [General Patch Notes Info](#general-patch-notes-info)
 - [Manifest Download Table / Specific Patch Findings](#manifest-download-table--specific-patch-findings)
 - [Actual README (aka how to edit this doc)](#actual-readme-aka-how-to-edit-this-doc)
 - [Acknowledgements](#acknowledgements)
@@ -185,7 +184,7 @@ This guide is now hosted with argubaly better formatting here: https://hitruns-w
   - Copy contents of `h3downpatch.xlsx` into https://tabletomarkdown.com/convert-spreadsheet-to-markdown/ to convert to Markdown Table.
   - Keep in mind that some links in the table cells may break after you do this.
 - Markdown Table of Contents Generator: https://jsfiddle.net/remarkablemark/o0mja3hf/
-  - Paste everything from [Video Walkthrough Header 2](#video-walkthrough-epic) and below into the jsfiddle and it'll spit out a table of contents
+  - Paste everything from [Purpose and Disclaimer](#purpose-and-disclaimer) and below into the jsfiddle and it'll spit out a table of contents
   - Including the first header `#Hitman 3 Downpatching` will make the table of contents unnecessarily nested
 - Actually it's a good idea to run `yarn prettier` before you make a commit in general, it can fix a lot of Markdown formatting issues
 
