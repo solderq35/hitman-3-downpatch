@@ -32,7 +32,11 @@ This guide is now hosted with argubaly better formatting here: https://hitruns-w
 
 - https://www.youtube.com/watch?v=4Uzx9CJf-uk
   - Credits: [Tinosaurus](https://github.com/Tinosaurus)
-- Currently we only have a video walkthrough for Epic, as the process is a lot more complicated for Epic. We may make a Steam video tutorial sometime in the future.
+
+  ## Video Walkthrough (Steam)
+
+- https://youtu.be/5mg3dFQyFkI
+  - Credits: [Solder](https://github.com/solderq35)
 
 ## General Command Line Stuff / Prereqs
 
@@ -97,11 +101,11 @@ This guide is now hosted with argubaly better formatting here: https://hitruns-w
 
 - For the next steps, head to [SteamDB](https://steamdb.info/depot/1659041/manifests/) to check the manifest ID's, or refer to the [table below](#manifest-download-table--specific-patch-findings).
   - Note that since Steam Hitman 3 was released January 2022, you can't downpatch to 2021 on Steam.
-- In Terminal / Command Line, navigate to the directory from where you installed Steam DepotDownloader with `cd <INSTALL_LOCATION>`
+- In Terminal / Command Line, navigate to the directory from where you installed Steam DepotDownloader with `cd <INSTALL_LOCATION>`, e.g. `cd C:\Users\usernamehere\Downloads\depotdownloader-2.47`
 - Run the following instructions:
-- `ddotnet DepotDownloader.dll -app 1847520 -depot <DEPOT_ID> -manifest <MANIFEST_ID> -user <STEAM_USER_ID> -pass <STEAM_PASSWORD> -dir <INSTALLDIR>`
-  - EXAMPLE INPUT: `dotnet DepotDownloader.dll -app 1847520 -depot 1659041 -manifest 1587269672222714171 -user steamusernamehere -pass passwordhere -dir 'C:\Program Files (x86)\Steam\steamapps\common\HITMAN 3'`
-- `dotnet DepotDownloader.dll -app 1847520 -depot <DEPOT_ID> -manifest <MANIFEST_ID> -user <STEAM_USER_ID> -pass <STEAM_PASSWORD> -dir <INSTALLDIR> -validate`
+- `dotnet DepotDownloader.dll -app 1847520 -depot 1659041 -manifest <MANIFEST_ID> -user <STEAM_USER_ID> -pass <STEAM_PASSWORD> -dir <INSTALLDIR>`
+  - EXAMPLE INPUT: `dotnet DepotDownloader.dll -app 1847520 -depot 1659041 -manifest 1587269672222714171 -user steamusernamehere -pass passwordhere -dir "C:\Program Files (x86)\Steam\steamapps\common\HITMAN 3"`
+- `dotnet DepotDownloader.dll -app 1847520 -depot 1659041 -manifest <MANIFEST_ID> -user <STEAM_USER_ID> -pass <STEAM_PASSWORD> -dir <INSTALLDIR> -validate`
   - Running "validate" afterwards ensures that no files were corrupted while being downloaded
 - Alternatively, if you want to keep your downpatch files separate / maintain a backup, you can leave out the `dir <INSTALLDIR>` argument and copy over the files manually.
 - Unlike with Epic, you can launch the downpatched game as normal through the official Steam client as you normally would.
@@ -165,7 +169,7 @@ This guide is now hosted with argubaly better formatting here: https://hitruns-w
 | [Eider 5915918](https://github.com/solderq35/hitman-3-downpatch/blob/main/src/Eider_Windows_5898594.manifest?raw=true) (Epic)                                               | 24-May-2022 or later | 3.110                                        | [https://www.ioi.dk/hitman-3-year-2-may-patch-notes](https://oldwebsite.ioi.dk/hitman-3-year-2-may-patch-notes)                                                              | - [S3 Master Cameras Patch](https://www.youtube.com/watch?v=GJcN8RMhOxo&t=24s)<br></br>- [Added invisible floor to Mendoza sliding roof](https://youtu.be/v2LsiANC3NY)<br></br>- Most recent ET Arcade dates to 2022-Jul-14                                                                                                                                                                                                                               |
 | [Eider 6041891](https://github.com/solderq35/hitman-3-downpatch/blob/main/src/Eider_Windows_6041891.manifest?raw=true) (Epic) <br></br><br></br>1587269672222714171 (Steam) | 26-Jul-2022          | 3.120                                        | [https://www.ioi.dk/hitman-3-july-patch-notes/](https://oldwebsite.ioi.dk/hitman-3-july-patch-notes/)                                                                        | - Added Molotov.<br></br>- Technically not the only patch with Molly playable<br></br>- Fixed (some) Haven viewcone wallhacks                                                                                                                                                                                                                                                                                                                             |
 | [Eider 6239328](https://github.com/solderq35/hitman-3-downpatch/blob/main/src/Eider_Windows_6239328.manifest?raw=true) (Epic) <br></br><br></br>182129136748469362 (Steam)  | 6-Oct-2022           | 3.130                                        | [https://www.ioi.dk/hitman-3-october-patch-notes/](https://oldwebsite.ioi.dk/hitman-3-october-patch-notes/)                                                                  | - [Removed molly accident / wallbang](https://youtu.be/eXTd8ZC3ftA)<br></br>- [Changed NY frisk](https://youtu.be/y2GuYwNMy5k?t=18)<br></br>  - Check the [new Frisk skip](https://hitruns-wiki.vercel.app/docs/fullgame_tutorials#meta-strategies-overview)<br></br>- Changed Dartmoor ledge drop<br></br>  - Check the [new Dartmoor Ledge Drop](https://youtu.be/RIlDbIci-bs?t=46)<br></br>- Removed [RFID exploit](https://youtu.be/fyPVfSPQSb4?t=96) |
-| [Eider 6519315](https://github.com/solderq35/hitman-3-downpatch/blob/main/src/Eider_Windows_6519315.manifest?raw=true) (Epic) <br></br><br></br>8905605137959754095 (Steam) | 26-Jan-2023          | 3.140                                        | [https://ioi.dk/hidden/h3-patchnotes?panel=hitman%2Fpatch-notes%2Fjanuary-patch-notes](https://ioi.dk/hidden/h3-patchnotes?panel=hitman%2Fpatch-notes%2Fjanuary-patch-notes) | - Removed [Particle Boosts](https://youtu.be/l5xo6fOUSq0?t=36) (will return in a later patch allegedly) <br></br> - Introduced Freelancer Game Mode <br></br> - Removed [Dartmoor Ledge Drop](https://media.discordapp.net/attachments/523948180287651860/1068219406842347621/image.png) for good <br></br> - Kalmer and Sieker no longer share ammo <br></br> - More stuff we will update later                                                          |
+| [Eider 6519315](https://github.com/solderq35/hitman-3-downpatch/blob/main/src/Eider_Windows_6519315.manifest?raw=true) (Epic) <br></br><br></br>8905605137959754095 (Steam) | 26-Jan-2023          | 3.140                                        | [https://ioi.dk/hidden/h3-patchnotes?panel=hitman%2Fpatch-notes%2F2023%2Fjanuary-patch-notes](https://ioi.dk/hidden/h3-patchnotes?panel=hitman%2Fpatch-notes%2F2023%2Fjanuary-patch-notes) | - Removed [Particle Boosts](https://youtu.be/l5xo6fOUSq0?t=36) (will return in a later patch allegedly) <br></br> - Introduced Freelancer Game Mode <br></br> - Removed [Dartmoor Ledge Drop](https://media.discordapp.net/attachments/523948180287651860/1068219406842347621/image.png) for good <br></br> - Kalmer and Sieker no longer share ammo <br></br> - More stuff we will update later
 
 ## Actual README (aka how to edit this doc)
 
