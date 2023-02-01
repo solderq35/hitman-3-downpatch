@@ -4,6 +4,7 @@ This guide is now hosted with argubaly better formatting here: https://hitruns-w
 
 - [Purpose and Disclaimer](#purpose-and-disclaimer)
 - [Video Walkthrough (Epic)](#video-walkthrough-epic)
+- [Video Walkthrough (Steam)](#video-walkthrough-steam)
 - [General Command Line Stuff / Prereqs](#general-command-line-stuff--prereqs)
 - [OS](#os)
 - [Install Instructions](#install-instructions)
@@ -13,7 +14,7 @@ This guide is now hosted with argubaly better formatting here: https://hitruns-w
 - [Miscellaneous Useful Info](#miscellaneous-useful-info)
 - [Manifest Download Table / Specific Patch Findings](#manifest-download-table--specific-patch-findings)
 - [Actual README (aka how to edit this doc)](#actual-readme-aka-how-to-edit-this-doc)
-- [Acknowledgements](#acknowledgements)
+- [Acknowledgements]
 
 ## Purpose and Disclaimer
 
@@ -32,7 +33,7 @@ This guide is now hosted with argubaly better formatting here: https://hitruns-w
 - https://www.youtube.com/watch?v=4Uzx9CJf-uk
   - Credits: [Tinosaurus](https://github.com/Tinosaurus)
 
-  ## Video Walkthrough (Steam)
+## Video Walkthrough (Steam)
 
 - https://youtu.be/5mg3dFQyFkI
   - Credits: [Solder](https://github.com/solderq35)
