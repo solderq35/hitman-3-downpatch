@@ -14,7 +14,7 @@ This guide is now hosted with argubaly better formatting here: https://hitruns-w
 - [Miscellaneous Useful Info](#miscellaneous-useful-info)
 - [Manifest Download Table / Specific Patch Findings](#manifest-download-table--specific-patch-findings)
 - [Actual README (aka how to edit this doc)](#actual-readme-aka-how-to-edit-this-doc)
-- [Acknowledgements]
+- [Acknowledgements](#acknowledgements)
 
 ## Purpose and Disclaimer
 
