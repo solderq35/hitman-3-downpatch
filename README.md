@@ -174,6 +174,7 @@ This guide is now hosted with argubaly better formatting here: https://hitruns-w
 
 ## Actual README (aka how to edit this doc)
 
+- Find new manifest files (user generated) when there is a new game update, by going to `%userprofile%` (Windows Search)> `.config` > `legendary` > `manifests`. Or, go to `C:\Users\<username>\.config\legendary` directly.
 - [Github Markdown Documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 - Editing the table directly in Markdown is recommended (Excel does not seem to allow multiple hyperlinks in a table cell, among other UI flaws).
   - I'm using VSCode for editing the Markdown, with [this Markdown extension](https://marketplace.visualstudio.com/items?itemName=starkwang.markdown) for general syntax help, and [this Markdown Preview Extension](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced) to see how my documents will look while still in development.
